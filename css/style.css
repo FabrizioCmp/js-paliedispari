@@ -1,3 +1,23 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div[class^="box"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+h5{
+    text-align: center;
+}
+
 .bkg{
     background-color: antiquewhite;
 }
@@ -5,11 +25,6 @@
     margin: 2rem 0;
 }
 
-.sec_plaindroma {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .sec_plaindroma button{
     padding: 0 15px;
     background-color: rgb(48, 130, 245);
@@ -19,6 +34,29 @@
 }
 
 .output_section{
-    font-size: 2rem;
-    
+    font-size: 2rem;   
 }
+
+.flex_grow{
+    flex-grow: 1;
+    width: 70%;
+}
+
+.btn_play{
+    font-size: 2rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    background-color: rgb(48, 130, 245);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.player_title{
+    color: blue;
+}
+
+.cpu_title{
+    color: red;
+}
+

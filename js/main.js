@@ -32,3 +32,8 @@ function isPalindroma() {
         console.log(parola);
     }
 };
+
+
+/******************** PARIeDISPARI SECTION ********************/
+// dichiarazione variabili
+const btnPlay = document

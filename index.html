@@ -19,9 +19,9 @@
             <!-- Palindroma section -->
             <section class="sec_plaindroma">
                 <h1 class="title">Inserisci parola e verifica se è palindroma</h1>
-                <div>    
+                <div>
                     <input type="text" placeholder="inserire parola" class="parola_input">
-                    <button class="btn_palindroma"> È palindroma  ?</button>
+                    <button class="btn_palindroma"> È palindroma ?</button>
                 </div>
                 <div class="output_section">
 
@@ -30,7 +30,40 @@
 
             <!-- Pari e dispari section -->
             <section>
-
+                <h1 class="title">Scegli Pari o dispari, un numero e scopri se hai vinto</h1>
+                <div class="row flex_grow">
+                    <div class="col-4">
+                        <div class="box_player">
+                            <h2 class="player_title">Player1</h2>
+                            <div class="box_pd">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="r-pari">
+                                        <label for="r-pari"> Pari</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="r-dispari">
+                                        <label for="r-dispari">Dispari</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_number">
+                                <h5>sceglier numero intero da 1 a 5</h5>
+                                <input type="text" placeholder="inserire numero">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box_btn">
+                            <button class="btn_play">Play</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box_cpu">
+                            <h2 class="cpu_title">CPU</h2>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
