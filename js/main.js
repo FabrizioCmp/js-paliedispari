@@ -36,4 +36,54 @@ function isPalindroma() {
 
 /******************** PARIeDISPARI SECTION ********************/
 // dichiarazione variabili
-const btnPlay = document
+const btnPlay = document.querySelector(".btn_play");
+const cpuNumberEl = document.querySelector(".cpu_number");
+const playerNumber = document.querySelector(".player_number");
+const gameResultEl = document.querySelector(".game_result");
+let radioChecked = "";
+
+
+btnPlay.addEventListener("click", function(){
+    let cpuNumber ;
+    let sum  ;
+    let isPari ;
+
+    for (i=1 ; i<=2; i++){
+        let currentRadio = document.getElementById(`r${i}`);
+        if(currentRadio.checked){
+            radioChecked = currentRadio.value;
+        }
+    }
+
+    cpuNumber = random1_5();
+    cpuNumberEl.innerHTML = cpuNumber;
+    sum = sum2(cpuNumber, parseInt(playerNumber.value));
+    isPari = sum % 2;
+
+    console.log(playerNumber.value);
+
+    gameResultEl.classList.add("display_result");
+
+    if (radioChecked === "" || playerNumber.value === "" ) {
+        gameResultEl.innerHTML = `effetua una scelta( pari o dispari) ed inserisci un numero intero tra 1 e 5`; 
+    }else if((radioChecked === "pari" && isPari === 0) || (radioChecked === "dispari" && isPari != 0)){
+        gameResultEl.innerHTML = `la somma è uguale a ${sum} ed è ${radioChecked}, hai vinto!  &#128526`;
+    }else {
+        gameResultEl.innerHTML = `la somma è uguale a ${sum} e non è ${radioChecked}, hai perso  &#128546`;
+    }
+})
+
+// dichiaraione funzioni 
+/**
+ * calcola numero casuale intero compreso tra 1 e 5
+ */
+function random1_5(){
+    return Math.floor(Math.random() * 5 + 1);
+}
+
+/**
+ * caclola la somma di due numeri
+ */
+function sum2(num1 , num2){
+    return num1 + num2;
+}
