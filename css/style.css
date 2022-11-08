@@ -1,0 +1,24 @@
+.bkg{
+    background-color: antiquewhite;
+}
+.title{
+    margin: 2rem 0;
+}
+
+.sec_plaindroma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec_plaindroma button{
+    padding: 0 15px;
+    background-color: rgb(48, 130, 245);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.output_section{
+    font-size: 2rem;
+    
+}
